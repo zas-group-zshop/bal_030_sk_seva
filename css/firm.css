@@ -1,0 +1,699 @@
+body {
+    background: white;
+    font-family: "Raleway", sans-serif;
+}
+
+h1,
+.h1 {
+  font-family: "Raleway", sans-serif;
+  color: #203373;
+}
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: #0090ae;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 20px 0 20px;
+  text-transform: uppercase;
+}
+h2 span,
+h3 span {
+  color: #0090ae;
+}
+
+#stripe .MainMenu a {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-right: 1px solid white;
+}
+
+#stripe .MainMenu li:last-child a {
+    border-right: none;
+}
+
+@media screen and (max-width: 1199px) {
+  #stripe .MainMenu a {
+      font-size: 16px;
+    padding: 6px 15px;
+    border: none;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #stripe {
+    background: none;
+  }
+}
+
+#stripe .MainMenu a:hover:after,
+#stripe .MainMenu a.active:after {
+  height: 6px;
+  bottom: -2px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1270px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    width: 1470px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+}
+
+.header {
+    background: #0090ae url(/App_Firma/img/panacek.png) no-repeat bottom center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: #0090ae url(/App_Firma/img/panacek.png) no-repeat top center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  #stripe .MainMenu {
+    background: #fff;
+    border-radius: 0;
+    border: none;
+    margin-top: 14px;
+  }
+}
+
+.menu_contact {
+    float: right;
+    margin: 25px 0;
+}
+
+.menu_contact li a, .menu_contact li span {
+    padding: 5px 10px;
+    color: white;
+    font-size: 19px;
+    border-right: none;
+    border-left: none;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1499px) {
+  .menu_contact {
+    margin: 10px 0 40px 0;
+}
+}
+
+@media screen and (max-width: 1199px) {
+  .menu_contact {
+    margin: 10px 0 0 0;
+}
+}
+
+.productParam .avail { overflow: hidden; }
+.badge.mod-top:hover {
+    background: red;
+    color: #fff;
+}
+.badge.mod-top {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    padding: 5px 14px 3px;
+}
+
+#ctl00_MasterPageModal {
+    display: none!important;
+}
+
+.page-description-text .info .sklad {font-weight:bold;}
+
+.new-badge {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    user-select: none;
+    line-height: 2.3;
+}
+.new-badge .mod-action {
+    font-family: "Raleway", sans-serif;
+    background: #d71920;
+    text-transform: uppercase;
+    border: 0;
+    padding: 5px 5px 3px;
+    border-radius: 3px;
+    margin-right: 6px;
+}
+.new-badge .mod-action.red {
+    color: #fff;
+    background-color: #d71920;
+}
+.new-badge .mod-action.blue {
+    color: #fff;
+    background-color: #337ab7;
+}
+.new-badge .mod-action.green {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+#logo {
+  height: 100px;
+  margin: 25px auto;
+  display: block;
+}
+@media screen and (max-width: 1199px) {
+  #logo {
+    height: 55px;
+    margin: 0;
+    display: block;
+    float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  #logo {
+    height: 55px;
+    margin: 40px 0 10px 0;
+    display: block;
+    float: left;
+  }
+}
+
+.btn-menu{
+    background: none;
+    border: none;
+    color: #91c84b;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-menu button{
+    padding: 0;
+    margin: 0;
+}
+
+.btn-menu:hover, .btn-menu:focus{
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-menu i{
+    font-size: 30px;
+}
+
+.menu_users li {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+.basketContainer, .menu_users li.basket {
+    font-family: "Raleway", sans-serif;
+    background-size: 100% auto;
+    position: relative;
+    background: url(/App_Firma/img/basket.png) no-repeat center center;
+    width: 47px;
+    height: 29px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1199px) {
+  .basketContainer, .menu_users li.basket {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .basketContainer, .menu_users li.basket {
+    position: absolute;
+    top: 46px;
+    right: 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .basketContainer, .menu_users li.basket {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+}
+.basketContainer span, .menu_users li.basket span {
+  position: absolute;
+  background: #fff;
+  padding: 7px 6px;
+  color: #203373;
+  border-radius: 23px;
+  right: -11px;
+  font-weight: 600;
+  font-size: 16px;
+  top: 0;
+  line-height: 6px;
+}
+.menu_users li.login {
+  display: inline-block;
+  float: left;
+  padding: 0;
+  color: #ffe9c9;
+}
+@media screen and (max-width: 1199px) {
+  .menu_users li.login {
+    padding: 0 5px;
+  }
+}
+.menu_users li.login .fa {
+  padding: 10px;
+}
+
+.loginBox {
+  background: #91c84b;
+  padding: 10px 10px 10px 10px;
+  border-radius: 0px;
+  position: absolute;
+  z-index: 999;
+  width: 300px;
+  right: 0;
+  color: white;
+  text-align: right;
+}
+@media screen and (max-width: 1199px) {
+    .loginBox {
+        display: none;
+        background: #91c84b;
+        padding: 10px 10px 10px 10px;
+        border-radius: 0px;
+        position: absolute;
+        z-index: 999;
+        width: 300px;
+        right: 0;
+        color: white;
+        text-align: right;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .loginBox {
+        display: block;
+        position: relative;
+        background: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        margin-top: 0px;
+    }
+}
+.loginBox a {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+.loginBox p {
+  margin: 5px 0 0 0;
+  color: #d45f2b;
+}
+.loginBox .fa {
+  color: #ffe9c9;
+  font-size: 30px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#search {
+  position: relative;
+  float: right;
+  width: 400px;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 1499px) {
+  #search {
+    position: relative;
+    float: right;
+    width: 200px;
+    margin: 0 20px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+    #search {
+    float: left;
+  }
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+}
+
+#search .fa {
+  position: absolute;
+  color: white;
+  top: 8px;
+  right: 11px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#search .keyword {
+    height: 40px;
+    padding: 8px 12px;
+  background: #a4ccdb;
+  color: #1f467a;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+}
+
+#search .search-btn {
+  background: #91c84b;
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 0;
+}
+
+.footerCopyrightWrapper {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.home-guide-new {
+    display: block;
+    text-align: left;
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;*/
+  margin-bottom: 90px;
+}
+.home-guide-new a,
+.home-guide-new span {
+    display: inline-block;
+  height: auto;
+  width: calc(20% - 3px);
+  padding: 20px;
+  cursor: pointer;
+  text-align: left;
+  max-width: unset;
+}
+.home-guide-new a img,
+.home-guide-new span img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1199px) {
+  .home-guide-new a,
+  .home-guide-new span {
+    display: inline-block;
+  height: auto;
+  width: calc(25% - 3px);
+  padding: 20px;
+  cursor: pointer;
+  text-align: left;
+  max-width: unset;
+  }
+  .home-guide-new a img,
+  .home-guide-new span img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .home-guide-new a,
+  .home-guide-new span {
+    display: inline-block;
+  height: auto;
+  width: calc(33.333333% - 3px);
+  padding: 20px;
+  cursor: pointer;
+  text-align: left;
+  max-width: unset;
+  }
+  .home-guide-new a img,
+  .home-guide-new span img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .home-guide-new a,
+  .home-guide-new span {
+    display: inline-block;
+  height: auto;
+  width: calc(50% - 3px);
+  padding: 20px;
+  cursor: pointer;
+  text-align: left;
+  max-width: unset;
+  }
+  .home-guide-new a img,
+  .home-guide-new span img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Dots */
+.slick-dotted .slick-slider {
+  margin-bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  background: #91c84b;
+  display: block;
+  height: 16px;
+  width: 16px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  color: black;
+  background: #0090ae;
+  border: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  background: transparent;
+}
+.slick-dots li button:before {
+    display: none;
+  background: #203373;
+  border: 5px solid #203373;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 16px;
+  height: 16px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 0;
+}
+.slick-dots li.slick-active button:before {
+  color: black;
+  background: transparent;
+  border: 5px solid #d45f2b;
+}
+
+.product-list-image {
+    position: relative;
+    text-align: center;
+}
+
+.product-list-catalog .product .inside .text-container {
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-list-catalog .product .inside .text-container p {
+  font-size: 15px;
+}
+
+.productParam .avail { overflow: hidden; }
+.badge.mod-top:hover {
+    background: red;
+    color: #fff;
+}
+.badge.mod-top {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+    font-family: 'DaxlinePro-ExtraBold';
+    text-transform: uppercase;
+    border: 0;
+    padding: 5px 14px 3px;
+}
+
+#ctl00_MasterPageModal {
+    display: none!important;
+}
+
+.page-description-text .info .sklad {font-weight:bold;}
+
+.new-badge {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    user-select: none;
+    line-height: 2.3;
+}
+.new-badge .mod-action {
+    font-family: 'DaxlinePro-ExtraBold';
+    background: #d71920;
+    text-transform: uppercase;
+    border: 0;
+    padding: 5px 5px 3px;
+    border-radius: 3px;
+    margin-right: 6px;
+}
+.new-badge .mod-action.red {
+    color: #fff;
+    background-color: #d71920;
+}
+.new-badge .mod-action.blue {
+    color: #fff;
+    background-color: #337ab7;
+}
+.new-badge .mod-action.green {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default {
+    border: 1px solid white;
+    background: 0 0;
+    border-bottom: 0;
+}
+
+.ui-tabs.ui-tabs .ui-tabs-nav .ui-tabs-active {
+    border-color: #203373;
+}
+
+.ui-tabs.ui-tabs .ui-tabs-nav .ui-tabs-active a:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: white;
+    left: 0;
+}
+
+.discountOk .close {
+    content:normal;
+    background: transparent url(/App_Firma/img/cross.png) no-repeat center center;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: none;
+    width: 10px;
+    height: 10px;
+}
+
+.discountOk .close:hover {
+    background: transparent url(/App_Firma/img/cross.png) no-repeat center center;
+}
+
+#google_translate_element {
+  position: relative;    
+    z-index: 999;    
+}
