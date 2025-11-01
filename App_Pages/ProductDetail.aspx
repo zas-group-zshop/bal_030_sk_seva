@@ -263,7 +263,7 @@
 
                                         										<span class="priceList price-with-vat">
                                         											<asp:PlaceHolder ID="phPriceWithDph" runat="server">
-                                        											 <span class="product-list-price-old <%= ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("ref_cena_s_dph")) == 0 || ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("ref_cena_s_dph"))==ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("web_items_cena_s_dph")) ? "hidden" : "" %>">
+                                        											 <span class="product-list-price-old <%= (ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("ref_cena_s_dph"))==0 ? 0 : Math.Abs(Math.Ceiling(100 * (ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("ref_cena_s_dph"))-ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("web_items_cena_s_dph"))) / ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("ref_cena_s_dph")))))<2 ? "hidden" : "" %>">
                                         											 <del><%= GetFormatPrice(ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("ref_cena_s_dph"))) %></del> <span class="dph"><%= GetFormatCurrency(EvalDataFromXml("id_meny"))%></span>
                                                                                      </span>
                                         				    							<span class="price"><%= GetFormatPrice(ZASutility.MyUtility.StringToNumeric(EvalDataFromXml("web_items_cena_s_dph")))%></span>&nbsp;<span class="dph"><%= GetFormatCurrency(EvalDataFromXml("id_meny"))%></span>
