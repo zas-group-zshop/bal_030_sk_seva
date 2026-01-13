@@ -83,6 +83,7 @@
                                         <div class="form-inline">
                                             <asp:TextBox ID="tbQuantity" runat="server" Text="1" MaxLength="5" cssClass="form-control input-sm hidden" />
                                             <zas:IntoBasketButton ID="btIntoBasket" runat="server" CssClass="button btn btn-basic btn-sm" CommandName="IntoBasket" ToolTip="<%$ Resources: Resource, BasketAfterInsertTitle %>" Text="DO KOŠÍKU"
+                                              Visible='<%# !this.Page.ToString().Contains("basket_aspx") %>'
                                               TbQuantityId="tbQuantity"
                                               Atribut1Id="" Atribut2Id="" Atribut3Id=""
                                               Atribut1IdName='<%# DataBinder.Eval(Container.DataItem, "atribut_1_nazev") %>' Atribut2IdName='<%# DataBinder.Eval(Container.DataItem, "atribut_2_nazev") %>' Atribut3IdName='<%# DataBinder.Eval(Container.DataItem, "atribut_3_nazev") %>'
@@ -103,6 +104,35 @@
                                               SazbaDph='<%# ZASutility.MyUtility.StringToNumeric(DataBinder.Eval(Container.DataItem, "sazba_dph")) %>'
                                               KoeficientDph='<%# ZASutility.MyUtility.StringToNumeric(DataBinder.Eval(Container.DataItem, "koeficient")) %>'
                                               ZasobaCelkem='<%# ZASutility.MyUtility.StringToNumeric(DataBinder.Eval(Container.DataItem, "zasoba_celkem")) %>' />  
+                        <asp:HyperLink runat="server" ToolTip="<%$ Resources: Resource, BasketAfterInsertTitle %>" Text="<%$ Resources: Resource, BasketInsertItem %>" 
+                            Visible='<%# this.Page.ToString().Contains("basket_aspx") %>'
+                            NavigateUrl='<%# String.Format("/ZASshopServicePage.aspx?&page-command=INSERT_ITEM_INTO_BASKET&Quantity=1&BackToBasket=1" +
+                                "&IdNomen={0}" +
+                                "&CisloNomen={1}" +
+                                "&IdMj={2}" +
+                                "&Mj={3}" +
+                                "&Cena={4}" +
+                                "&IdMeny={5}" +
+                                "&Dph={6}" +
+                                "&CenaMistni={7}" +
+                                "&SazbaDph={8}" +
+                                "&KoeficientDph={9}" +
+                                "&ZasobaCelkem={10}" +
+                                "&Nazev={11}",
+                                ZASutility.MyUtility.SafeEvalString(Container.DataItem, "id_nomen"),
+                                ZASutility.MyUtility.SafeEvalString(Container.DataItem, "cislo_nomenklatury"),
+                                ZASutility.MyUtility.SafeEvalString(Container.DataItem, "id_mj"),
+                                ZASutility.MyUtility.SafeEvalString(Container.DataItem, "mj"),
+                                ZASutility.MyUtility.StringToNumeric(ZASutility.MyUtility.SafeEvalString(Container.DataItem, "cena")),
+                                ZASutility.MyUtility.SafeEvalString(Container.DataItem, "id_meny"),
+                                ZASutility.MyUtility.SafeEvalString(Container.DataItem, "dph_anone"),
+                                ZASutility.MyUtility.StringToNumeric(ZASutility.MyUtility.SafeEvalString(Container.DataItem, "cena_mistni")),
+                                ZASutility.MyUtility.StringToNumeric(ZASutility.MyUtility.SafeEvalString(Container.DataItem, "sazba_dph")),
+                                ZASutility.MyUtility.StringToNumeric(ZASutility.MyUtility.SafeEvalString(Container.DataItem, "koeficient")),
+                                ZASutility.MyUtility.StringToNumeric(ZASutility.MyUtility.SafeEvalString(Container.DataItem, "zasoba_celkem")),
+                                ZASutility.MyUtility.SafeEvalString(Container.DataItem, "nazev")
+                                ) %>'
+                            CssClass="button btn btn-basic btn-xs"/>
                                         </div>
                                     </div>
                                 </div>
