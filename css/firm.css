@@ -427,9 +427,81 @@ h3 span {
   border-radius: 0;
 }
 
+.footer-wrapper {
+  background: #0090ae;
+  padding: 10px 0;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-wrapper a {
+  color: white;  
+}
+
+.footer-wrapper h3, .footerCopyrightWrapper h3 {  
+  color: white;
+}
+
 .footerCopyrightWrapper {
     margin-left: 0;
     margin-right: 0;
+    color: white;
+    background: #0183a3;
+}
+
+.footerCopyrightWrapper a {  
+  color: white;
+}
+
+.product-detail-slider.slick-initialized .slick-slide {  
+  border-right: 5px solid #d8d8d8;  
+}
+
+.modal-gallery-popup {  
+  background: white;
+}
+
+.modal-desc {
+  background: white;
+}
+
+.modal-gallery-slides li.active {
+  border-color: #203373;
+  background: #203373;
+}
+
+.modal-popup .modal-desc .modal-title {  
+  color: #203373;  
+  border-bottom: 1px solid #203373;
+}
+
+.modal-gallery-slides li:hover {
+
+    border-color: #203373;
+    background: #203373;
+}
+
+.modal-gallery-slides li.active:before {
+  border-color: #203373 transparent transparent;  
+}
+
+.modal-gallery-slides li:hover:before {
+  border-color: #203373 transparent transparent;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-gallery-slides li:hover:before {
+      border-color: transparent #203373 transparent transparent;
+  }
+}
+
+.left-col-h2 {  
+  color: white;  
+}
+
+#leftMenu ul ul ul{  
+  margin-left: 50px;
 }
 
 .home-guide-new {
