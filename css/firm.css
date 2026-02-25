@@ -462,7 +462,7 @@ h3 span {
 }
 
 .modal-desc {
-  background: white;
+  background: red;  
 }
 
 .modal-gallery-slides li.active {
