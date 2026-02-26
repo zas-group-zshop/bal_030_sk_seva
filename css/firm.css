@@ -134,10 +134,6 @@ h3 span {
     font-weight: 300;
 }
 
-.menu_contact li a:hover {    
-    color: #7fb539;    
-}
-
 @media screen and (max-width: 1499px) {
   .menu_contact {
     margin: 10px 0 40px 0;
@@ -463,10 +459,6 @@ h3 span {
 
 .modal-gallery-popup {  
   background: white;
-}
-
-.modal-desc {
-  background: red;  
 }
 
 .modal-gallery-slides li.active {
