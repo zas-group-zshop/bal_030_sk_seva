@@ -505,6 +505,10 @@ h3 span {
 }
 
 @media (max-width: 992px) {
+  #leftMenu ul ul ul{  
+    margin-left: 10px;
+  }
+
   .left-menu a {    
     padding: 20px 7px 20px 60px;
     background-position: 10px center!important;
