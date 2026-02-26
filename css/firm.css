@@ -461,6 +461,10 @@ h3 span {
   background: white;
 }
 
+.modal-desc {
+  background: white;
+}
+
 .modal-gallery-slides li.active {
   border-color: #203373;
   background: #203373;
