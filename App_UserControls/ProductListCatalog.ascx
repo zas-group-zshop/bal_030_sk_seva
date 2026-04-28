@@ -21,6 +21,7 @@
                                 
                                 <span class="new-badge">
                                   <%# ZASutility.MyUtility.SafeEvalString(Container.DataItem, "odznaky_html") %>
+				  <%# ZASutility.MyUtility.SafeEvalString(Container.DataItem, "user_odznak") %>
                                 </span>
                                 <asp:PlaceHolder runat="server" visible="false">
                                 <span class="<%# DataBinder.Eval(Container.DataItem, "akce_typ").ToString() == "10" ? "badge mod-news" : (DataBinder.Eval(Container.DataItem, "akce_typ").ToString() == "12" ? "badge mod-action" : (DataBinder.Eval(Container.DataItem, "akce_typ").ToString() == "20" ? "badge mod-sellout" : (DataBinder.Eval(Container.DataItem, "akce_typ").ToString() == "30" ? "badge mod-top" : "badge mod-none"))) %>">
