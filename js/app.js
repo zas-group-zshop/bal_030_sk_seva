@@ -183,9 +183,14 @@ var dicountHelper = {
 	},
 	initDiscountOk: function() {
         $(".discountOk .close").click( function () {
-			var text = $(this).parent(".discountOk").text();                
-            localStorage.setItem( "discountCode", localStorage.getItem("discountCode").replaceAll(text + " ", ""))
-			localStorage.setItem( "discountCode", localStorage.getItem("discountCode").replaceAll(text, ""))
+			var text = $(this).parent(".discountOk").text();
+			var storedDiscountCode = localStorage.getItem("discountCode") || "";
+			storedDiscountCode = storedDiscountCode.replaceAll(text + " ", "").replaceAll(text, "").trim();
+			if (storedDiscountCode) {
+				localStorage.setItem("discountCode", storedDiscountCode);
+			} else {
+				localStorage.removeItem("discountCode");
+			}
 			$(".discountCodeContainer").val($(".discountCodeContainer").val().replace(text + ", ", "").replace(text, ""));
 
 			$(this).parent(".discountOk").remove();
@@ -197,9 +202,7 @@ var dicountHelper = {
 		if( $(".discountCodeContainer").val() ){
 			oldValue = $(".discountCodeContainer").val() + ", ";
 		}*/		
-		if(localStorage.getItem("discountCode")) {                    
-            localStorage.setItem("discountCode", value);
-		}
+		localStorage.setItem("discountCode", value);
 
 		// Pokud již existuje div s třídou discountOk, nejdříve ho odstraň
 		$(".discountOk").remove();
