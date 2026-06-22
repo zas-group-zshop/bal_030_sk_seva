@@ -196,8 +196,7 @@ var dicountHelper = {
 			$(this).parent(".discountOk").remove();
         });
 	},
-	resultFinish: function (value) {
-		console.log(value);
+	resultFinish: function (value) {		
 		/*var oldValue = "";
 		if( $(".discountCodeContainer").val() ){
 			oldValue = $(".discountCodeContainer").val() + ", ";
