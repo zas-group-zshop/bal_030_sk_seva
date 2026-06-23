@@ -4,6 +4,13 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
 <asp:Panel runat="server">
+                    <script type="text/javascript">
+                        try {
+                            localStorage.removeItem("discountCode");
+                            localStorage.removeItem("discount");
+                            localStorage.removeItem("discount-code");
+                        } catch (e) { }
+                    </script>
                     <div class="RegForm">
                     <!-- pageDesc -->
                     <div class="pageDesc page-description">
